@@ -1,0 +1,265 @@
+main{
+  width: 80vw;
+  padding-top: 85px;
+  min-height: 200px;
+  /* height: max-content; */
+  /* background-color: blue; */
+  display: grid;
+  grid-template-columns: minmax(200px, 3fr) minmax(320px,11fr) 6fr;
+  grid-template-areas: "center center right";
+  gap: 5px;
+}
+
+main > .writecenter{
+  /* min-width: 525px; */
+  height: fit-content;
+  background-color: rgba(242, 238, 182, .5);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(50px, auto) max-content;
+  gap: 5px;
+  border-radius: 10px;
+  grid-area: center;
+}
+
+footer{
+  margin: 10px auto;
+  text-align: center;
+  /* background-color: brown; */
+}
+
+@media screen and (max-width:800px) {
+  header{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+  }
+
+  header > .search{
+    max-width:90%;
+    overflow: hidden;
+  }
+
+  main{
+    padding-top: 116px;
+    /* min-height: 800px; */
+    height: max-content;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(300px, auto) minmax(300px, auto);
+    grid-template-areas: 
+      "center"
+      "right";
+  }
+  main > .writecenter{
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(50px, auto) minmax(300px, auto);
+  grid-area: center;
+  }
+
+  main > .right{
+    grid-area: right;
+  }
+}
+
+.right{
+  margin-top: 0px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 5px; */
+  padding-bottom: 10px;
+  /* padding-left: 5px;
+  padding-right: 5px; */
+  background-color: rgba(255, 255, 255, .3);
+  /* background-color: rgba(5, 199, 242, 0.3); */
+  border-radius: 10px;
+  grid-area: right;
+}
+
+.hot, .recent{
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.hot{
+  padding-bottom: 10px;
+}
+
+.hot > a, .recent > a{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  background-color: rgba(5, 199, 242, 0.3);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.hot > a:nth-child(1), .recent > a:nth-child(1){
+  background-color: rgba(5, 199, 242, 0.6);
+  font-size: 1.25rem;
+}
+
+input::placeholder{
+  color: rgba(5, 199, 242, 0.7);
+  font-family: 'Jua', sans-serif;
+}
+
+input:focus{
+  /* border: 3px dashed rgba(255, 255, 255, .3); */
+  /* outline: 5px solid #fff; */
+  outline: none;
+}
+
+main > .writecenter > .board-name{
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .5);
+  height: fit-content;
+}
+main > .writecenter .bname{
+  margin: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  border-radius: 10px;
+  background-color: rgba(242, 182, 210, .6);
+  font-size: 1.3rem;
+}
+main > .writecenter > .write{
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+main > .writecenter > .write > .wcontent{
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 1rem;
+  /* border: 1px solid #f25ea3; */
+}
+main > .writecenter > .write > .status{
+  /* border: 1px solid #f25ea3; */
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+main > .writecenter > .write > .status img{
+  height: 20px;
+  margin-right: 2px;
+}
+main > .writecenter > .write > .status > .good{
+  /* background-color: #05C7F2; */
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+main > .writecenter > .write > .status > .comment{
+  /* background-color: fuchsia; */
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+main > .writecenter > .write  .writeprofile{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 60px 100px;
+  /* column에 사이즈 준거때문에 화면 엄청 줄엿을때 안줄어듦 */
+  grid-template-areas: 
+  "image time"
+  "image nickname";
+}
+main > .writecenter > .write  .writeprofile > img{
+  height: 40px;
+  background-color: rgba(255, 249, 191, 0.5);
+  grid-area: image;
+}
+main > .writecenter > .write  .writeprofile > time{
+  /* border: 1px solid #f25ea3; */
+  font-size: 0.9rem;
+  grid-area: time;
+  display: flex;
+  align-items: center;
+}
+main > .writecenter > .write  .writeprofile > .nickname{
+  /* border: 1px solid #f25ea3; */
+  font-size: 0.9rem;
+  grid-area: nickname;
+  display: flex;
+  align-items: center;
+}
+/* 노랑색 rgba(255, 249, 191, 0.5); */
+main > .writecenter > .write > .wname{
+  padding: 10px;
+  /* border: 1px solid #f25ea3; */
+  background-color: rgba(242, 182, 210, .3);
+  padding-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+main > .writecenter > .write > .wname > p{
+  padding: 10px;
+  font-size: 1.5rem;
+  padding-bottom: 0px;
+}
+main > .writecenter > .write > .commentslist > li img{
+  height: 20px;
+}
+.commentslist{
+  /* border-top: 1px solid rgba(242, 182, 210, .5); */
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(242, 182, 210, .1);
+}
+.writecomment{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 36px;
+  gap: 5px;
+}
+.writecomment > button{
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(242, 94, 163, .3);
+  display: flex;
+  justify-content: center;
+}
+.writecomment > button > img{
+  width: 30px;
+}
+.goodbtn{
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+}
+.goodbtn > img{
+  width: 60px;
+}
+.goodbtn > p{
+  position: absolute;
+  top: 22px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  color: #fff;
+  font-family: 'Jua', sans-serif;
+  font-size: 1rem;
+  text-shadow: 0px 0px 5px red;
+  background-color: rgb(255, 80, 98);
+}

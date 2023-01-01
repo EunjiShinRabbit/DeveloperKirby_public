@@ -1,0 +1,64 @@
+.unRegck_container_first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.unRegck {
+    font-size: 20px;
+    position: relative;
+    line-height: 30px;
+    background-color: rgba(242, 182, 210, .3);
+    border-radius: 10px;   
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+.unRegck_1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: rgba(242, 182, 210, .6);
+    font-size: 1.3rem;
+    text-align: center;
+    width: 370px;
+    margin: 10px;
+    position: absolute;
+}
+.unRegck_nickname {
+    position: absolute;
+    top: 160px;
+    left: 30px;
+}
+.unRegck_pwd {
+    position: absolute;
+    top: 210px;
+    left: 30px;
+}
+.unRegck_pwd2{
+    width: 230px;
+    height: 26px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(242, 182, 210, 0.6);
+    font-family: 'Jua', sans-serif;
+}
+.unRegPwd_hint {
+    position: absolute;
+    top: 238px;
+    right: 50px;
+    font-size: 12px;
+    color: gray;
+}
+.unRegck_yes {
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+    cursor: pointer;
+}
+.unRegck_cancle {
+    position: absolute;
+    bottom: 40px;
+    right: 80px;
+}

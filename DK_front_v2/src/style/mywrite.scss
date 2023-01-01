@@ -1,0 +1,41 @@
+.myWrite_name {
+    padding: 10px;
+  /* border: 1px solid #f25ea3; */
+  background-color: rgba(242, 182, 210, .3);
+  padding-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.myWrite_content {
+    padding: 10px;
+  padding-top: 20px;
+  font-size: 1rem;
+}
+.myWrite_time {
+    font-size: 0.9rem;
+  grid-area: time;
+  display: flex;
+  align-items: center;
+}
+.myWrite_nickname {
+    font-size: 0.9rem;
+  grid-area: nickname;
+  display: flex;
+  align-items: center;
+}
+.myWrite_status {
+    display: flex;
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+.myWrite_good {
+    display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.myWrite_comment {
+    display: flex;
+  align-items: center;
+  padding-left: 10px;
+}

@@ -1,0 +1,90 @@
+.loginwrapper{
+  margin-left: -10vw;
+  width: 100vw;
+  min-height: 100vh;
+  height: max-content;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../resource/kirby_bg6_short2.png");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // button {
+  //   font-family: 'Jua', sans-serif;
+  //   font-size: 1rem;
+  //   border-radius: 10px;
+  //   border: none;
+  //   background-color: rgba(242, 182, 210, 0.8);
+  //   color: #fff;
+  //   border: 2px solid rgba(242, 182, 210, 0.8);
+
+  //   &:hover {
+  //     background-color: rgba(242, 182, 210, 1);
+  //     border: 2px solid rgba(255, 78, 161, 0.6);
+  //   }
+  // }
+}
+
+.loginwrapper{
+  justify-content: center;
+  align-items: center;
+}
+
+.loginBox{
+  margin: 10px;
+  padding: 30px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .5);
+  border-radius: 20px;
+
+  p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  >p >span{
+    margin-right: 5px;
+  }
+
+  img{
+    width: 80px;
+    height: 80px;
+  }
+
+  input {
+    padding-left: 10px;
+    height: 30px;
+    font-family: 'Jua', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(242, 182, 210, 0.6);
+
+    &::placeholder {
+      color: #ccc;
+    }
+  }
+}
+
+.logostart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span{
+    padding-top: 30px;
+  }
+}
+
+.loginform{
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
