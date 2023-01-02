@@ -67,6 +67,6 @@ yarn install
 ```sh
 yarn start
 ```
-Kirby_Back : 이클립스를 통해 파일 실행
+Kirby_Back : 이클립스를 통해 파일 실행  
 Dk_front_v2, dk_admin_front : 각 폴더를 위의 명령어들로 파일 실행
 
